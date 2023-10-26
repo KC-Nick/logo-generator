@@ -1,0 +1,23 @@
+{
+  "name": "logo-generator",
+  "version": "1.0.0",
+  "description": "This project is a logo generator that uses Inquirer and other npm packages to generate an SVG image based on prompts given to the user.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KC-Nick/logo-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KC-Nick/logo-generator/issues"
+  },
+  "homepage": "https://github.com/KC-Nick/logo-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^29.7.0"
+  }
+}
