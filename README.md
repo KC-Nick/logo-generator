@@ -1,3 +1,4 @@
+[logo-gen.webm](https://github.com/KC-Nick/logo-generator/assets/139719585/33b44a58-4a4a-4224-92b0-3d1822445833)
 # Logo Generator
 
   ![License Badge](https://img.shields.io/badge/License-MIT-green.svg)
@@ -27,7 +28,7 @@
 
   ## Test
   
-  Tests will be proivded in video form.
+  Tests will be provided in video form, attached.
   
   ## License
   
