@@ -1,3 +1,4 @@
+[Uploading logo-gen.webm…]()
 # Logo Generator
 
   ![License Badge](https://img.shields.io/badge/License-MIT-green.svg)
@@ -27,7 +28,7 @@
 
   ## Test
   
-  Tests will be proivded in video form.
+  Tests will be provided in video form, attached.
   
   ## License
   
