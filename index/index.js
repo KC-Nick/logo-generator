@@ -1,23 +1,17 @@
 const inquirer = require('inquirer');
-const {Circle, Triangle, Square} = require('../lib/shapes.js');
+const { Circle, Triangle, Square } = require('../lib/shapes.js');
 const fs = require('fs');
 const path = require('path');
-//Validates the text input by inquirer
-const logoTextValidator = async (input) => {
-    if (input > 3) {
-       throw new Error ('Please no more than 3 characters.');
-    }
-    return true;
- };
 
-async function mainMenu () {
+async function mainMenu() {
     //awaits the prompts to be answered before the rest of the code runs
     const response = await inquirer.prompt([
         {
             name: 'text',
-            type: 'input', 
+            type: 'input',
             message: 'Enter text for your logo.',
-            validate: logoTextValidator()
+            validate: (text) => 
+                text.length <= 3 || "Must be 3 characters or less."
         },
         {
             name: 'textColor',
@@ -32,7 +26,7 @@ async function mainMenu () {
         },
         {
             name: 'bgColor',
-            type:'input',
+            type: 'input',
             message: 'What color would you like the background of your logo?'
         }
     ]);
@@ -56,7 +50,7 @@ async function mainMenu () {
     <text x="150" y="125" font-size="60" text-anchor="middle" fill="${response.textColor}">${response.text}</text>
   
   </svg>`
-  //accesses file path using __dirname to create file in specific location
-  fs.writeFileSync(path.join(__dirname, './examples/logo.svg'), svg);
+    //accesses file path using __dirname to create file in specific location
+    fs.writeFileSync(path.join(__dirname, './examples/logo.svg'), svg);
 }
 mainMenu();

@@ -4,7 +4,8 @@
   "description": "This project is a logo generator that uses Inquirer and other npm packages to generate an SVG image based on prompts given to the user.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node ./index/index.js"
   },
   "repository": {
     "type": "git",
