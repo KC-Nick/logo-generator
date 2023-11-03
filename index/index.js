@@ -1,10 +1,10 @@
 const inquirer = require('inquirer');
-const {Circle, Triangle, Square} = require('./lib/shapes');
+const {Circle, Triangle, Square} = require('../lib/shapes.js');
 const fs = require('fs');
 const path = require('path');
 //Validates the text input by inquirer
 const logoTextValidator = async (input) => {
-    if (input.length > 3) {
+    if (input > 3) {
        throw new Error ('Please no more than 3 characters.');
     }
     return true;
