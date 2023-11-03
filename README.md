@@ -5,7 +5,7 @@
 
   ## Description
 
-  This project was created to help create basic logos using three shapes, three or less letters, and colors to make a logo easily without hassle. One simply starts the code in terminal using `node` and then the copied path of the `index.js` file, answers the questions (using basic colors or hexidecimal numbers for colors), and then a logo will be generated in the `/examples` folder.
+  This project was created to help create basic logos using three shapes, three or less letters, and colors to make a logo easily without hassle. One simply starts the code in terminal using `npm start`, answers the questions (using basic colors or hexidecimal numbers for colors), and then a logo will be generated in the `/examples` folder.
 
   ## Table of Contents
   - [Installation](#installation)
@@ -16,7 +16,7 @@
 
   ## Installation
 
-  To install project, one must clone the Github repository to their local device. After this, open the project and using `node` run the copied path of the `index.js` file.
+  To install project, one must clone the Github repository to their local device. After this, open the project and using `npm start`.
 
   ## Credits
 
@@ -28,7 +28,7 @@
 
   ## Test
   
-  Tests will be provided in video form, attached.
+  Tests will be provided in video form, attached. `npm test` is available in the scripts using Jest.
   
   ## License
   
